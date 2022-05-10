@@ -7,7 +7,7 @@
 
 #Разворачиваемся
 <br/>
-git clone https://github.com/axelstoun93/FlowWowTestTask
+git clone https://github.com/axelstoun93/flowwowTestTask
 <br/>
 composer install 
 
