@@ -27,7 +27,8 @@ abstract class DataTransferObject implements DataTransferObjectInterface {
         foreach ($arrayObjectProperty as $key => $property) {
             if (!empty($response[$key])) {
                 if (is_array($response[$key])) {
-                    $className = 'OpenExchangeRates\Dto\Entity' . '\Rates';
+                    $name = $key;
+                    $className = 'OpenExchangeRates\Dto\Entity\\'.$name;
                     $this->$key = new $className($response[$key]);
                     continue;
                 }
